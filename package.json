@@ -1,8 +1,12 @@
 {
   "name": "be-to-do-management-system",
   "version": "0.0.0",
-  "private": true,
-  "type": "commonjs",
+  "private": false,
+  "main" : "index.js",
+  "engines": {
+    "node" : "20.x"
+  },
+  
   "scripts": {
     "dev": "nodemon -w ./*.js ./*.js",
     "start": "node ./bin/www",
@@ -22,6 +26,8 @@
     "pg": "^8.13.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
     "@eslint/js": "^9.20.0",
     "eslint": "^9.20.0",
     "globals": "^15.14.0",
